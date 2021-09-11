@@ -10,11 +10,14 @@
         <meta name="author" content="" />
         <title>Jeremiah Aquino - Portfolio</title>
 
+		<!-- AOS CSS CDN -->
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"
+
         <!-- Core Frame CSS-->
         <link href="css/style.css" rel="stylesheet" />
 
 		<!-- Contents CSS -->
-		<link href="css/contents.css" rel="stylesheet" />
+		<link href="css/content.css" rel="stylesheet" />
 
     </head>
 
@@ -35,9 +38,12 @@
         </nav>
 
         <!-- Home-->
-        <header class="bg-primary bg-gradient text-white banner-container">
-            <div class="container px-4 text-center">
-                <h1 class="fw-bolder">Banner Page</h1>
+        <header class="banner-container">
+            <div class="banner-content">
+               <p class="banner-content-intro" data-aos="fade-right" data-aos-duration="1500">Hi I'm</p>
+			   <p class="banner-content-name" data-aos="fade-left" data-aos-duration="1500">Jeremiah Aquino</p>
+			   <p class="banner-content-title" data-aos="fade-left" data-aos-duration="1500" >Full Stack Software Engineer, MERN Developer and Web Designer</p>
+			   <p class="banner-content-caption" data-aos="fade-right" data-aos-duration="1500" >A developer with strong business process acumen and problem solving skills; able to identify the needs of organizational stakeholders and deliver effective technology solutions through full stack software development.</p>
             </div>
         </header>
 
@@ -91,3 +97,8 @@
         <script src="scripts/script.js"></script>
     </body>
 </html>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+	AOS.init();
+</script>
