@@ -1,0 +1,437 @@
+/*CSS RESET*/
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+
+/*BODY*/
+
+.wrapper {
+    display: flex;
+    width: 100%;
+}
+
+.colored-strip {
+	background-color: #dbdbdb;
+}
+
+.colored-button {
+	background-color:#ededed;
+	border:none;
+	color:#242424;
+	border-radius:25px;
+	font-weight:bold;
+	border:2px solid #000000;
+	transition: 0.3s;
+}
+
+.colored-button:hover {
+	background-color:#000000;
+	border:none;
+	color:#ffffff;
+	border-radius:25px;
+	font-weight:bold;
+	border:2px solid #000000;
+	transition: 0.3s;
+}
+
+.colored-button:focus {
+	box-shadow:0px 0px 0px #000000 !important;
+}
+
+.form-control:focus{
+	border-color:black !important;
+	box-shadow:0px 0px 0px #000000 !important;
+}
+
+/*SIDE BAR*/
+
+/*Hide Show Navbar*/
+#sidebar {
+    width: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 999;
+    background-color: #242424 !important;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+#sidebar.active {
+    margin-left: -250px;
+}
+
+.sidebar-items {
+	width:100%;
+	padding-top:25%;
+	padding-bottom:25%;
+	transition: 0.3s;
+}
+
+.navImg {
+	width:40%;
+}
+
+.sidebar-items:hover {
+  background-color: #636363;
+}
+
+#sidebarCollapse {
+	font-size: 20px;
+}
+
+
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -70px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #content {
+        width: 100%;
+    }
+    #content.active {
+        width: calc(100% - 70px);
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
+
+}
+
+/*CONTENT*/
+
+#content {
+    width: calc(100% - 70px);
+    min-height: 100vh;
+    transition: all 0.3s;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding:0 !important;
+}
+
+#content.active {
+    width: 100%;
+}
+
+/*PAGE COVER*/
+
+.jumbotron {
+  background-image: url("./../assets/bannerCover.jpg");
+  background-size: cover;
+  padding:50px;
+  color:#ffffff;
+  height:100vh;
+  border-radius: 0;
+  margin:0;
+}
+
+#jumbotronTitle {
+   	font-size:70px;
+}
+
+#jumbotronCaption {
+   	font-size:23px;
+}
+
+@media (max-width: 768px) {
+
+	.jumbotron {
+	  padding:20px;
+	  color:#ffffff;
+	}
+
+	#jumbotronTitle {
+    	font-size:55px;
+    }
+
+    #jumbotronCaption {
+       	font-size:30px;
+    }
+}
+
+@media (max-width: 500px) {
+
+  .jumbotron {
+    padding:20px;
+    color:#ffffff;
+  }
+
+  #jumbotronTitle {
+      font-size:38px;
+    }
+
+    #jumbotronCaption {
+        font-size:18px;
+    }
+}
+
+@media (max-width: 360px) {
+
+	.jumbotron {
+	  padding:20px;
+	  color:#ffffff;
+	}
+
+	#jumbotronTitle {
+    	font-size:23px;
+    }
+
+    #jumbotronCaption {
+       	font-size:14px;
+    }
+}
+
+/*ABOUT ME*/
+
+#profilePicture {
+	width:200px;
+}
+
+#nameTag {
+	font-size: 20px;
+	font-weight:bold;
+}
+
+.card-container {
+	width: 100%;
+}
+
+.card-image {
+	width:70px;
+}
+
+.card-text {
+	font-weight:lighter;
+}
+
+#selfIntro {
+	height:100vh;
+}
+
+@media (max-width: 768px) {
+	#selfIntro  {
+		height:auto !important;
+	}
+}
+
+/*PROJECTS*/
+
+/*Image Hover*/
+
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+*, *:before, *:after{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing:border-box;
+  box-sizing: border-box;
+}
+
+body{
+  background: #f9f9f9;
+  
+}
+
+.main-title{
+  color: #2d2d2d;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 0.7em 0;
+}
+
+.container {
+  padding: 1em 0;
+  width:90%;
+}
+
+@media screen and (max-width: 640px){
+  .container{
+ 
+    width: 90%;
+  }
+}
+
+.container .title{
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.content {
+  position: relative;
+  width: 95%;
+  max-width: 400px;
+  margin: auto;
+  overflow: hidden;
+  border-radius:25px;
+}
+
+.content-title {
+	color:#ffffff;
+	font-weight:bold;
+}
+
+.content .content-overlay {
+  background: rgba(0,0,0,0.7);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.content:hover .content-overlay{
+  opacity: 1;
+}
+
+.content-image{
+  width: 100%;
+}
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.content:hover .content-details{
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.content-details h3{
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
+.content-details p{
+  color: #fff;
+  font-size: 0.8em;
+}
+
+.fadeIn-bottom{
+  top: 80%;
+}
+
+/*FOOTER*/
+
+#footer {
+	background-color:#000000
+}
+
+#linkedin {
+	border:3px solid white;
+	border-radius:50%;
+	width:60px;
+	height:60px;
+	background:url("./../assets/link_white.png");
+	background-size: cover;
+	background-size: 20px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color:#000000;
+	transition:0.3s;
+	cursor:pointer;
+}
+
+#linkedin:hover {
+	border:3px solid white;
+	border-radius:50%;
+	width:60px;
+	height:60px;
+	background:url("./../assets/link_black.png");
+	background-size: cover;
+	background-size: 20px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color:#ffffff;
+}
+
+#mail {
+	border:3px solid white;
+	border-radius:50%;
+	width:60px;
+	height:60px;
+	background:url("./../assets/mail_white.png");
+	background-size: cover;
+	background-size: 20px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color:#000000;
+	transition:0.3s;
+	cursor:pointer;
+}
+
+#mail:hover {
+	border:3px solid white;
+	border-radius:50%;
+	width:60px;
+	height:60px;
+	background:url("./../assets/mail_black.png");
+	background-size: cover;
+	background-size: 20px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color:#ffffff;
+}
+
+#gitlab {
+	border:3px solid white;
+	border-radius:50%;
+	width:60px;
+	height:60px;
+	background:url("./../assets/git_white.png");
+	background-size: cover;
+	background-size: 20px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color:#000000;
+	transition:0.3s;
+	cursor:pointer;
+}
+
+#gitlab:hover {
+	border:3px solid white;
+	border-radius:50%;
+	width:60px;
+	height:60px;
+	background:url("./../assets/git_black.png");
+	background-size: cover;
+	background-size: 20px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color:#ffffff;
+}
