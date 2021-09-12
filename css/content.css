@@ -306,13 +306,13 @@ nav {
         text-align:center;
         margin-top:10%;
         font-weight:bold;
-        font-size: calc(70% + 1vw + 1vh);
+        font-size: calc(70% + .9vw + .9vh);
     }
     
     .about-skills-card-caption {
         color:#999999;
         margin-top:5%;
-        font-size: calc(40% + 1vw + 1vh);
+        font-size: calc(40% + .7vw + .7vh);
     }
 
 }
@@ -514,6 +514,279 @@ nav {
         color:#999999;
         margin-top:0;
         margin-bottom:0;
+        font-size: calc(10% + 1vw + 1vh);
+    }
+
+}
+
+/* PROJECTS */
+
+
+.project-container {
+    background-color:#212529;
+    height:auto;
+    padding-top:1%;
+}
+
+.project-content {
+    padding:5%;
+    padding-left:21%;
+    padding-right:21%;
+}
+
+.project-label {
+    color:#999999;
+    font-size: calc(100% + 1vw + 1vh);
+    margin-top:0;
+    margin-bottom:0;
+}
+
+.project-demo-container {
+    margin-top:10%;
+}
+
+.project-demo-image {
+    width:100%;
+    transition:.3s;
+}
+
+.project-demo-image:hover {
+    transform: scale(1.1);
+}
+
+.project-demo-caption-title {
+    color:#ffffff;
+    font-weight:bold;
+    margin-top:0;
+    margin-bottom:0;
+    font-size: calc(10% + .8vw + .8vh);
+    
+}
+
+.project-demo-caption-category {
+    color:#ffffff;
+    margin-top:0;
+    margin-bottom:0;
+    font-size: calc(10% + .8vw + .8vh);
+}
+
+.project-demo-caption-text {
+    color:#999999;
+    margin-top:0;
+    margin-bottom:0;
+    font-size: calc(10% + .8vw + .8vh);
+}
+
+.project-card-image {
+    width:100%;
+}
+
+.project-card {
+    margin-top:10%;
+}
+
+.project-card-image {
+    width:100%;
+}
+
+.project-card-title {
+    color:#ffffff;
+    font-weight:bold;
+    margin-top:10%;
+    font-size: calc(10% + .7vw + .7vh);
+}
+
+.project-card-details {
+    color:#999999;
+    font-size: calc(10% + .4vw + .4vh);
+}
+
+.project-card-tech {
+    color:#ffffff;
+    font-size: calc(10% + .6vw + .6vh);
+}
+
+@media only screen and (max-width: 1050px) {
+
+    .project-container {
+        background-color:#212529;
+        height:auto;
+        padding-top:1%;
+    }
+    
+    .project-content {
+        padding:5%;
+        padding-left:17%;
+        padding-right:17%;
+    }
+    
+    .project-label {
+        color:#999999;
+        font-size: calc(100% + 2vw + 2vh);
+        margin-top:0;
+        margin-bottom:0;
+        text-align:center;
+    }
+    
+    .project-demo-container {
+        margin-top:10%;
+    }
+    
+    .project-demo-image {
+        width:100%;
+        transition:.3s;
+    }
+    
+    .project-demo-image:hover {
+        transform: scale(1.1);
+    }
+    
+    .project-demo-caption-container {
+        margin-top:5%;
+    }
+
+    .project-demo-caption-title {
+        color:#ffffff;
+        font-weight:bold;
+        margin-top:0;
+        margin-bottom:0;
+        font-size: calc(10% + 1vw + 1vh);
+        
+    }
+    
+    .project-demo-caption-category {
+        color:#ffffff;
+        margin-top:0;
+        margin-bottom:0;
+        font-size: calc(10% + 1vw + 1vh);
+    }
+    
+    .project-demo-caption-text {
+        color:#999999;
+        margin-top:0;
+        margin-bottom:0;
+        font-size: calc(10% + 1vw + 1vh);
+    }
+    
+    .project-card-image {
+        width:100%;
+    }
+    
+    .project-card {
+        margin-top:10%;
+    }
+    
+    .project-card-image {
+        width:100%;
+    }
+    
+    .project-card-title {
+        color:#ffffff;
+        font-weight:bold;
+        margin-top:10%;
+        font-size: calc(10% + 1vw + 1vh);
+    }
+    
+    .project-card-details {
+        color:#999999;
+        font-size: calc(10% + .6vw + .6vh);
+    }
+    
+    .project-card-tech {
+        color:#ffffff;
+        font-size: calc(10% + 1vw + 1vh);
+    }
+
+}
+
+@media only screen and (max-width: 650px) {
+
+    .project-container {
+        background-color:#212529;
+        height:auto;
+        padding-top:1%;
+    }
+    
+    .project-content {
+        padding:5%;
+        padding-left:13%;
+        padding-right:13%;
+    }
+    
+    .project-label {
+        color:#999999;
+        font-size: calc(70% + 1vw + 1vh);
+        margin-top:0;
+        margin-bottom:0;
+        text-align:center;
+    }
+    
+    .project-demo-container {
+        margin-top:10%;
+    }
+    
+    .project-demo-image {
+        width:100%;
+        transition:.3s;
+    }
+    
+    .project-demo-image:hover {
+        transform: scale(1.1);
+    }
+    
+    .project-demo-caption-container {
+        margin-top:5%;
+    }
+
+    .project-demo-caption-title {
+        color:#ffffff;
+        font-weight:bold;
+        margin-top:0;
+        margin-bottom:0;
+        font-size: calc(10% + 1vw + 1vh);
+        
+    }
+    
+    .project-demo-caption-category {
+        color:#ffffff;
+        margin-top:0;
+        margin-bottom:0;
+        font-size: calc(10% + 1vw + 1vh);
+    }
+    
+    .project-demo-caption-text {
+        color:#999999;
+        margin-top:0;
+        margin-bottom:0;
+        font-size: calc(10% + 1vw + 1vh);
+    }
+    
+    .project-card-image {
+        width:100%;
+    }
+    
+    .project-card {
+        margin-top:10%;
+    }
+    
+    .project-card-image {
+        width:100%;
+    }
+    
+    .project-card-title {
+        color:#ffffff;
+        font-weight:bold;
+        margin-top:10%;
+        font-size: calc(10% + 1vw + 1vh);
+    }
+    
+    .project-card-details {
+        color:#999999;
+        font-size: calc(10% + .8vw + .8vh);
+    }
+    
+    .project-card-tech {
+        color:#ffffff;
         font-size: calc(10% + 1vw + 1vh);
     }
 
