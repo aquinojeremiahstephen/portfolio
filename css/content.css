@@ -1,116 +1,520 @@
+body {
+    overflow-x: hidden !important;
+    background-color:#212529 !important;
+}
+
+nav {
+    width:100%;
+}
+
 /* BANNER */
 
 .banner-container {
-    background-color: #212529;
-    height: 100vh;
+    background-color:#212529;
+    height:100vh;
+    padding-top:5%;
 }
 
 .banner-content {
-    margin:auto;
-    width:85%;
+    padding:5%;
+    padding-left:21%;
+    padding-right:21%;
 }
 
 .banner-content-intro {
     color:#999999;
-    margin-top:2%;
-    margin-left:10%; 
-    margin-right:10%; 
+    font-size: calc(70% + 1vw + 1vh);
+    margin-top:0;
     margin-bottom:0;
-    font-size:30px;
-    padding:0;
 }
 
 .banner-content-name {
     color:#ffffff;
-    margin-left:10%;
-    margin-right:10%; 
-    margin-bottom:0;
-    font-size:80px;
-    padding:0;
+    font-size: calc(100% + 2.5vw + 2.5vh);
     font-weight:bold;
+    margin-top:0;
+    margin-bottom:0;
 }
 
 .banner-content-title {
     color:#ffffff;
-    margin-left:10%;
-    margin-right:10%; 
-    margin-bottom:0;
-    font-size:40px;
-    padding:0;
+    font-size: calc(80% + 1vw + 1vh);
     font-weight:bold;
+    margin-top:0;
+    margin-bottom:0;
 }
 
 .banner-content-caption {
     color:#999999;
-    margin-top:2%;
-    margin-left:10%; 
-    margin-right:10%; 
+    font-size: calc(10% + .8vw + .8vh);
+    margin-top:0;
     margin-bottom:0;
-    font-size:20px;
-    padding:0;
+}
+
+@media only screen and (max-width: 1050px) {
+
+    .banner-container {
+        padding-top:20%
+    }
+
+    .banner-content {
+        padding:5%;
+        padding-left:17%;
+        padding-right:17%;
+        margin-top:5%;
+    }
+    
+    .banner-content-intro {
+        color:#999999;
+        font-size: calc(70% + 1vw + 1vh);
+    }
+    
+    .banner-content-name {
+        color:#ffffff;
+        font-size: calc(100% + 2.5vw + 2.5vh);
+        font-weight:bold;
+    }
+    
+    .banner-content-title {
+        color:#ffffff;
+        font-size: calc(90% + 1vw + 1vh);
+        font-weight:bold;
+    }
+    
+    .banner-content-caption {
+        color:#999999;
+        font-size: calc(30% + 1vw + 1vh);
+    }
+
+}
+
+@media only screen and (max-width: 650px) {
+
+    .banner-container {
+        padding-top:35%
+    }
+
+    .banner-content {
+        padding:1%;
+        padding-left:13%;
+        padding-right:13%;
+    }
+    
+    .banner-content-intro {
+        color:#999999;
+        font-size: calc(60% + 1vw + 1vh);
+    }
+    
+    .banner-content-name {
+        color:#ffffff;
+        font-size: calc(100% + 1.7vw + 1.7vh);
+        font-weight:bold;
+    }
+    
+    .banner-content-title {
+        color:#ffffff;
+        font-size: calc(60% + 1vw + 1vh);
+        font-weight:bold;
+    }
+    
+    .banner-content-caption {
+        color:#999999;
+        font-size: calc(30% + 1vw + 1vh);
+    }
+
 }
 
 /* ABOUT */
 
 .about-container {
-    background-color: #212529;
-    height: auto;
+    background-color:#212529;
+    height:auto;
+    padding-top:3%;
 }
 
 .about-content {
-    margin:auto;
-    width:85%;
+    padding:5%;
+    padding-left:21%;
+    padding-right:21%;
 }
 
-.about-me-content {
-    margin-left:10%;
-    margin-right:10%;
-}
-
-.about-me-content-image {
-    width:70%;
-}
-
-.about-me-content-title{
-    font-size:30px;
-    color:#ffffff;
-}
-
-.about-me-content-caption{
-    font-size:17px;
-    color:#99999999;
-}
-
-.about-ido-content {
-    margin:auto;
-    width:85%;
-    margin-top:5%
-}
-
-.about-ido-card {
-    padding:2%;
-    /* border:2px solid red; */
-}
-
-.about-ido-card-image-container {
-    /* border:2px solid red; */
-    text-align:center;
-    margin-bottom:2%;
-}
-
-.about-ido-card-image {
-    width:20%;
-}
-
-.about-ido-card-title {
-    font-size:20px;
-    color:#ffffff;
-    text-align:center;
-    font-weight:bold
-}
-
-.about-ido-card-caption {
-    font-size:17px;
+.about-label {
     color:#999999;
+    font-size: calc(70% + 1vw + 1vh);
+    margin-top:0;
+    margin-bottom:0;
 }
 
+.about-details-container {
+    margin-top:3%;
+}
+
+.about-details-caption {
+    color:#999999;
+    font-size: calc(10% + .7vw + .7vh);
+}
+
+.about-details-image {
+    width:90%;
+}
+
+.about-skills-container {
+    margin-top:18%;
+}
+
+.about-skills-card-image-container {
+    text-align:center;
+}
+
+.about-skills-card-image {
+    width:20%
+}
+
+.about-skills-card-title {
+    color:#ffffff;
+    text-align:center;
+    margin-top:10%;
+    font-weight:bold;
+    font-size: calc(10% + .9vw + .9vh);
+}
+
+.about-skills-card-caption {
+    color:#999999;
+    margin-top:5%;
+    font-size: calc(10% + .6vw + .6vh);
+}
+
+@media only screen and (max-width: 1050px) {
+
+    .about-container {
+        background-color:#212529;
+        height:auto;
+        padding-top:3%;
+    }
+    
+    .about-content {
+        padding:5%;
+        padding-left:17%;
+        padding-right:17%;
+    }
+    
+    .about-label {
+        color:#999999;
+        font-size: calc(100% + 2vw + 2vh);
+        margin-top:0;
+        margin-bottom:0;
+        text-align:center;
+    }
+    
+    .about-details-container {
+        margin-top:3%;
+    }
+    
+    .about-details-caption {
+        color:#999999;
+        font-size: calc(15% + 1vw + 1vh);
+    }
+    
+    .about-details-image {
+        width:60%;
+    }
+
+    .about-skills-container {
+        margin-top:18%;
+    }
+
+    .about-skills-card {
+        margin-top:30%;
+    }
+    
+    .about-skills-card-image-container {
+        text-align:center;
+    }
+    
+    .about-skills-card-image {
+        width:20%
+    }
+    
+    .about-skills-card-title {
+        color:#ffffff;
+        text-align:center;
+        margin-top:10%;
+        font-weight:bold;
+        font-size: calc(80% + 1vw + 1vh);
+    }
+    
+    .about-skills-card-caption {
+        color:#999999;
+        margin-top:5%;
+        font-size: calc(60% + 1vw + 1vh);
+    }
+
+}
+
+@media only screen and (max-width: 650px) {
+
+    .about-container {
+        background-color:#212529;
+        height:auto;
+        padding-top:3%;
+    }
+    
+    .about-content {
+        padding:2%;
+        padding-left:13%;
+        padding-right:13%;
+    }
+    
+    .about-label {
+        color:#999999;
+        font-size: calc(70% + 1vw + 1vh);
+        margin-top:0;
+        margin-bottom:0;
+    }
+    
+    .about-details-container {
+        margin-top:3%;
+    }
+    
+    .about-details-caption {
+        color:#999999;
+        font-size: calc(15% + 1vw + 1vh);
+    }
+    
+    .about-details-image {
+        width:60%;
+    }
+
+    .about-skills-container {
+        margin-top:18%;
+    }
+
+    .about-skills-card {
+        margin-top:30%;
+    }
+    
+    .about-skills-card-image-container {
+        text-align:center;
+    }
+    
+    .about-skills-card-image {
+        width:20%
+    }
+    
+    .about-skills-card-title {
+        color:#ffffff;
+        text-align:center;
+        margin-top:10%;
+        font-weight:bold;
+        font-size: calc(70% + 1vw + 1vh);
+    }
+    
+    .about-skills-card-caption {
+        color:#999999;
+        margin-top:5%;
+        font-size: calc(40% + 1vw + 1vh);
+    }
+
+}
+
+/* EXPERIENCE */
+
+
+.experience-container {
+    background-color:#212529;
+    height:auto;
+    padding-top:1%;
+}
+
+.experience-content {
+    padding:5%;
+    padding-left:21%;
+    padding-right:21%;
+}
+
+.experience-label {
+    color:#999999;
+    font-size: calc(100% + 1vw + 1vh);
+    margin-top:0;
+    margin-bottom:0;
+}
+
+.experience-details-container {
+    margin-top:10%;
+}
+
+.experience-details-image {
+    width:80%;
+}
+
+.experience-details-caption-company {
+    color:#ffffff;
+    font-weight:bold;
+    margin-top:0;
+    margin-bottom:0;
+    font-size: calc(10% + .8vw + .8vh);
+    
+}
+
+.experience-details-caption-position {
+    color:#ffffff;
+    margin-top:0;
+    margin-bottom:0;
+    font-size: calc(10% + .8vw + .8vh);
+}
+
+.experience-details-caption-duration {
+    color:#999999;
+    margin-top:0;
+    margin-bottom:0;
+    font-size: calc(10% + .8vw + .8vh);
+}
+
+.experience-details-caption-role {
+    color:#999999;
+    margin-top:0;
+    margin-bottom:0;
+    font-size: calc(10% + .6vw + .6vh);
+}
+
+@media only screen and (max-width: 1050px) {
+
+    .experience-container {
+        background-color:#212529;
+        height:auto;
+        padding-top:1%;
+    }
+    
+    .experience-content {
+        padding:5%;
+        padding-left:17%;
+        padding-right:17%;
+    }
+    
+    .experience-label {
+        color:#999999;
+        font-size: calc(100% + 2vw + 2vh);
+        margin-top:0;
+        margin-bottom:0;
+        text-align:center
+    }
+    
+    .experience-details-container {
+        margin-top: 10%;
+    }
+
+    .experience-details-container {
+        margin-top:10%;
+    }
+
+    .experience-details-image-container
+    {
+        text-align:center;
+    }
+    
+    .experience-details-image {
+        width:80%;
+    }
+    
+    .experience-details-caption-company {
+        color:#ffffff;
+        font-weight:bold;
+        margin-top:0;
+        margin-bottom:0;
+        font-size: calc(30% + 1vw + 1vh);
+        
+    }
+    
+    .experience-details-caption-position {
+        color:#ffffff;
+        margin-top:0;
+        margin-bottom:0;
+        font-size: calc(30% + 1vw + 1vh);
+    }
+    
+    .experience-details-caption-duration {
+        color:#999999;
+        margin-top:0;
+        margin-bottom:0;
+        font-size: calc(30% + 1vw + 1vh);
+    }
+    
+    .experience-details-caption-role {
+        color:#999999;
+        margin-top:0;
+        margin-bottom:0;
+        font-size: calc(10% + 1vw + 1vh);
+    }
+
+}
+
+@media only screen and (max-width: 650px) {
+
+    .experience-container {
+        background-color:#212529;
+        height:auto;
+        padding-top:1%;
+    }
+    
+    .experience-content {
+        padding:5%;
+        padding-left:13%;
+        padding-right:13%;
+    }
+    
+    .experience-label {
+        color:#999999;
+        font-size: calc(70% + 1vw + 1vh);
+        margin-top:0;
+        margin-bottom:0;
+    }
+    
+
+    .experience-details-container {
+        margin-top:20%;
+    }
+
+    .experience-details-image-container
+    {
+        text-align:center;
+    }
+    
+    .experience-details-image {
+        width:100%;
+    }
+
+    .experience-details-caption-container {
+        margin-top:20%;
+    }
+    
+    .experience-details-caption-company {
+        color:#ffffff;
+        font-weight:bold;
+        margin-top:0;
+        margin-bottom:0;
+        font-size: calc(30% + 1vw + 1vh);
+        
+    }
+    
+    .experience-details-caption-position {
+        color:#ffffff;
+        margin-top:0;
+        margin-bottom:0;
+        font-size: calc(30% + 1vw + 1vh);
+    }
+    
+    .experience-details-caption-duration {
+        color:#999999;
+        margin-top:0;
+        margin-bottom:0;
+        font-size: calc(30% + 1vw + 1vh);
+    }
+    
+    .experience-details-caption-role {
+        color:#999999;
+        margin-top:0;
+        margin-bottom:0;
+        font-size: calc(10% + 1vw + 1vh);
+    }
+
+}
